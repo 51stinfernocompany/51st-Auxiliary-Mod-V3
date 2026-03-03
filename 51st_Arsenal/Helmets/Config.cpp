@@ -68,26 +68,12 @@ class CfgWeapons
 		};
 	};
 	
-	class 51st_P2_Helmet_Trooper_1: 51st_P2_Helmet_Base
+	class 51st_P2_Helmet_Trooper: 51st_P2_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_trooper_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_trooper_co.paa"};
-		class XtdGearInfo
-		{
-			model = "51st_Phase2_Helmets";
-			Category = "Custom";
-			Camo = "Name_Here";
-		};
-	};
-	
-	class 51st_P2_Helmet_Trooper_2: 51st_P2_Helmet_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_trooper_2_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_trooper_2_co.paa"};
+		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_CT_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_CT_co.paa"};
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
@@ -101,7 +87,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\P2_helmet_corporal_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\P2_helmet_corporal_co.paa"};
+		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\P2_helmet_CPL_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\P2_helmet_CPL_co.paa"};
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
@@ -116,7 +102,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayName = "[51st] Phase II Sergeant Helmet";
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_sergeant_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_sergeant_co.paa"};
+		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_SGT_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_SGT_co.paa"};
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
@@ -130,12 +116,12 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_officer_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_officer_co.paa"};
+		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_command_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_command_co.paa"};
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
 			Category = "Rank";
-			Camo = "Officer";
+			Camo = "Command";
 		};
 	};
 	
@@ -148,7 +134,7 @@ class CfgWeapons
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
-			Category = "Specialisation";
+			Category = "Qualification";
 			Camo = "Anti_Tank";
 		};
 	};
@@ -162,7 +148,7 @@ class CfgWeapons
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
-			Category = "Specialisation";
+			Category = "Qualification";
 			Camo = "Heavy";
 		};
 	};
@@ -176,39 +162,25 @@ class CfgWeapons
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
-			Category = "Specialisation";
+			Category = "Qualification";
 			Camo = "Marksman";
 		};
 	};
 	
-	class ic51_p2_helmet_medic_t2: 51st_P2_Helmet_Base
+	class ic51_p2_helmet_medic: 51st_P2_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_medic_t2_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_medic_t2_co.paa"};
+		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_Helmet_Medic_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_Helmet_Medic_co.paa"};
 		class XtdGearInfo
 		{
 			model = "51st_Phase2_Helmets";
-			Category = "Specialisation";
-			Camo = "MedicT2";
+			Category = "Qualification";
+			Camo = "Medic";
 		};
 	};
-	
-	class ic51_p2_helmet_medic_t3: 51st_P2_Helmet_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		hiddenSelectionsTextures[] = {"51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_medic_t3_co.paa","51st_Armoury\51st_Arsenal\Helmets\Phase 2\p2_helmet_medic_t3_co.paa"};
-		class XtdGearInfo
-		{
-			model = "51st_Phase2_Helmets";
-			Category = "Specialisation";
-			Camo = "MedicT3";
-		};
-	};
-	
+
 	class ic51_p2_helmet_sabre1: 51st_P2_Helmet_Base
 	{
 		scope = 2;
@@ -349,6 +321,8 @@ class CfgWeapons
 		};
 	};
 	
+//Airborne Helmets
+
 	class 51st_Airborne_Helmet_Base: IDA_AB_Helmet
 	{
 		author = "Jay Leno's Chin";
@@ -402,6 +376,8 @@ class CfgWeapons
 		};
 	};
 	
+//ARF Helmets
+
 	class 51st_Arf_Helmet_Base: ls_gar_phase1Arf_helmet
 	{
 		author = "Jay Leno's Chin";
@@ -477,7 +453,7 @@ class CfgWeapons
 		class XtdGearInfo
 		{
 			model = "51st_Arf_Helmets";
-			Camo = "desert";
+			Camo = "Desert";
 		};
 	};
 	
@@ -490,6 +466,6 @@ class CfgWeapons
 		class XtdGearInfo
 		{
 			model = "51st_Arf_Helmets";
-			Camo = "winter";
+			Camo = "Winter";
 		};
 	};
