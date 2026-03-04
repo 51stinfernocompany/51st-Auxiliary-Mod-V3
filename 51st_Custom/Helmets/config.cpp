@@ -276,3 +276,4 @@ class cfgweapons
 			camo = "sand";
 		};
 	};
+};
