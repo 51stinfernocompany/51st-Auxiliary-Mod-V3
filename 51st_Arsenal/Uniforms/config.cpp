@@ -76,12 +76,31 @@ class cfgweapons
 		};
 	};
 
-	class ic51_clone_uniform_ct : ic51_clone_uniform_base
+	class ic51_clone_uniform_base : ic51_clone_uniform_base
 	{
 		displayName = "[51st] P2 Trooper Uniform";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass="ic51_clone_unit_ct";
+			uniformClass="ic51_clone_unit_base";
+		};
+		class xtdgearinfo
+		{
+			model = "51st_phase2_armours";
+			camo = "ct";
+		};
+	};
+	
+	class ic51_clone_uniform_corporal : ic51_clone_uniform_base
+	{
+		displayName = "[51st] P2 Trooper Uniform";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="ic51_clone_unit_corporal";
+		};
+		class xtdgearinfo
+		{
+			model = "51st_phase2_armours";
+			camo = "corporal";
 		};
 	};
 };
@@ -95,7 +114,7 @@ class CfgVehicles
 		scopeCurator = 1;
 		author = "Jay Lenos Chin";
 		displayName = "[51st] Clone Trooper";
-		uniformclass = "class 51st_clone_uniform_base";
+		uniformclass = "51st_clone_uniform_base";
 		faction = "ic51_faction_inferno";
 		editorSubCategory = "ic51_soldiers";
 		hiddenSelections[] = {"Camo1","Camo2"};
@@ -288,10 +307,10 @@ class CfgVehicles
 		impactDamageMultiplier = 0.5;
 	};
 	
-	class ic51_clone_unit_ct: 51st_clone_unit_base
+	class ic51_clone_unit_base: 51st_clone_unit_base
 	{
 		displayName = "[51st] Clone Trooper";
-		uniformclass = "ic51_clone_uniform_ct";
+		uniformclass = "ic51_clone_uniform_base";
 		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_CT_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_CT_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		facewearList[] = {""};
@@ -327,7 +346,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper Sergeant";
 		uniformclass = "ic51_clone_uniform_sergeant";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sergeant_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_sergeant_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sergeant_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_sergeant_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -345,7 +364,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper Officer";
 		uniformclass = "ic51_clone_uniform_command";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_command_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_command_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_command_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_command_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -359,47 +378,11 @@ class CfgVehicles
 		magazines[] = {"ic51_dc15a_mag"};
 		respawnMagazines[] = {"ic51_dc15a_mag"};
 	};
-	class ic51_clone_unit_medic_t2: 51st_clone_unit_base
-	{
-		displayName = "[51st] Clone Trooper Medic (Tier 2)";
-		uniformclass = "ic51_clone_uniform_medic_t2";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_t2_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_medic_t2_co.paa"};
-		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
-		genericNames = "ls_clone_p2_ct";
-		facewearList[] = {""};
-		Backpack = "";
-		items[] = {""};
-		respawnItems[] = {""};
-		linkedItems[] = {"ic51_p2_helmet_medic_t2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnLinkedItems[] = {"ic51_p2_helmet_medic_t2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		weapons[] = {"ic51_dc15s","Throw","Put"};
-		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
-		magazines[] = {"ic51_dc15s_mag"};
-		respawnMagazines[] = {"ic51_dc15s_mag"};
-	};
-	class ic51_clone_unit_medic_t3: 51st_clone_unit_base
-	{
-		displayName = "[51st] Clone Trooper Medic (Tier 3)";
-		uniformclass = "ic51_clone_uniform_medic_t3";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_t3_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_medic_t3_co.paa"};
-		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
-		genericNames = "ls_clone_p2_ct";
-		facewearList[] = {""};
-		Backpack = "";
-		items[] = {""};
-		respawnItems[] = {""};
-		linkedItems[] = {"ic51_p2_helmet_medic_t3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnLinkedItems[] = {"ic51_p2_helmet_medic_t3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		weapons[] = {"ic51_dc15s","Throw","Put"};
-		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
-		magazines[] = {"ic51_dc15s_mag"};
-		respawnMagazines[] = {"ic51_dc15s_mag"};
-	};
 	class ic51_clone_unit_pilot_combat: 51st_clone_unit_base
 	{
 		displayName = "[51st] Clone Trooper Pilot (Combat)";
 		uniformclass = "ic51_clone_uniform_pilot_combat";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_pilot_combat_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_pilot_combat_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_pilot_combat_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_pilot_combat_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -417,7 +400,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper Pilot (Logistics)";
 		uniformclass = "ic51_clone_uniform_pilot_logi";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_pilot_logi_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_pilot_logi_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_pilot_logi_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_pilot_logi_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -435,7 +418,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper (Sabre One)";
 		uniformclass = "ic51_clone_uniform_sabre1";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre1_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_sabre1_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre1_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_sabre1_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -453,7 +436,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper (Sabre Two)";
 		uniformclass = "ic51_clone_uniform_sabre2";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre2_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_sabre2_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre2_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_sabre2_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -471,7 +454,7 @@ class CfgVehicles
 	{
 		displayName = "[51st] Clone Trooper (Sabre Three)";
 		uniformclass = "ic51_clone_uniform_sabre3";
-		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre3_co.paa","\x\ic51\addons\armor\data\uniform_clone\lower\uniform_clone_lower_sabre3_co.paa"};
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_sabre3_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_sabre3_co.paa"};
 		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		genericNames = "ls_clone_p2_ct";
 		facewearList[] = {""};
@@ -480,6 +463,134 @@ class CfgVehicles
 		respawnItems[] = {""};
 		linkedItems[] = {"ic51_p2_helmet_sabre3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnLinkedItems[] = {"ic51_p2_helmet_sabre3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	
+	class ic51_clone_unit_medic_sabre1: 51st_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Sabre 1)";
+		uniformclass = "ic51_clone_uniform_medic_sabre1";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_sabre1_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_medic_sabre1_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_medic_sabre1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_medic_sabre1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	class ic51_clone_unit_medic_sabre2: 51st_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Sabre 2)";
+		uniformclass = "ic51_clone_uniform_medic_sabre2";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_sabre2_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_medic_sabre2_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_medic_sabre2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_medic_sabre2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	class ic51_clone_unit_medic_sabre3: 51st_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Sabre 3)";
+		uniformclass = "ic51_clone_uniform_medic_sabre3";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_sabre3_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_medic_sabre3_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_medic_sabre3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_medic_sabre3","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	
+	class ic51_clone_unit_havoc1: ic51_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Havoc 1)";
+		uniformclass = "ic51_clone_uniform_havoc1";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_havoc1_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_havoc1_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_havoc1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_havoc1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	class ic51_clone_unit_havoc2: ic51_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Havoc 2)";
+		uniformclass = "ic51_clone_uniform_havoc2";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_havoc2_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_havoc2_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_havoc2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_havoc2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	class ic51_clone_unit_medic_havoc1: ic51_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Havoc 1)";
+		uniformclass = "ic51_clone_uniform_medic_havoc1";
+		hiddenSelectionsTextures[] = {"51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_havoc1_co.paa","51st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_medic_havoc1_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_medic_havoc1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_medic_havoc1","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		weapons[] = {"ic51_dc15s","Throw","Put"};
+		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
+		magazines[] = {"ic51_dc15s_mag"};
+		respawnMagazines[] = {"ic51_dc15s_mag"};
+	};
+	class ic51_clone_unit_medic_havoc2: ic51_clone_unit_base
+	{
+		displayName = "[51st] Clone Trooper Medic (Havoc 2)";
+		uniformclass = "ic51_clone_uniform_medic_havoc2";
+		hiddenSelectionsTextures[] = {"1st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_upper_medic_havoc2_co.paa","1st-Auxiliary-Mod-V3\51st_Arsenal\Uniforms\Phase 2\uniform_clone_lower_medic_havoc2_co.paa"};
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
+		genericNames = "ls_clone_p2_ct";
+		facewearList[] = {""};
+		Backpack = "";
+		items[] = {""};
+		respawnItems[] = {""};
+		linkedItems[] = {"ic51_p2_helmet_medic_havoc2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"ic51_p2_helmet_medic_havoc2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		weapons[] = {"ic51_dc15s","Throw","Put"};
 		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
 		magazines[] = {"ic51_dc15s_mag"};
