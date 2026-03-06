@@ -1,6 +1,6 @@
 class cfgpatches
 {
-	class 51st_helmets
+	class 51st_uniforms
 	{
 		author="Jay Leno's Chin";
 		filename = "51st_arsenal.pbo";
@@ -89,7 +89,7 @@ class cfgweapons
 		};
 	};
 
-	class ic51_clone_uniform_base : ic51_clone_uniform_base
+	class ic51_clone_uniform_base : ic51_clone_uniform_base_new
 	{
 		displayName = "[51st] Phase 2 Trooper Armour";
 		class ItemInfo: ItemInfo
@@ -610,8 +610,8 @@ class CfgVehicles
 		Backpack = "";
 		items[] = {""};
 		respawnItems[] = {""};
-		linkedItems[] = {"ic51_p2_helmet_ct","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnLinkedItems[] = {"ic51_p2_helmet_ct","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"51st_p2_helmet_ct","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnLinkedItems[] = {"51st_p2_helmet_ct","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		weapons[] = {"ic51_dc15s","Throw","Put"};
 		respawnWeapons[] = {"ic51_dc15s","Throw","Put"};
 		magazines[] = {"ic51_dc15s_mag"};

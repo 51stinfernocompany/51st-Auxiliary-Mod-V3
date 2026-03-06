@@ -1,6 +1,6 @@
 class cfgpatches
 {
-	class 51st_Custom_helmets
+	class 51st_custom_helmets
 	{
 		author="Jay Leno's Chin";
 		filename = "51st_arsenal.pbo";
@@ -17,38 +17,22 @@ class cfgpatches
 		};
 		weapons[]=
 		{
-			"p2_helmet_base",
-			"51st_p2_helmet_ct",
-			"ic51_p2_helmet_corporal",
-			"ic51_p2_helmet_sergeant",
-			"ic51_p2_helmet_command",
-			"ic51_p2_helmet_at",
-			"ic51_p2_helmet_heavy",
-			"ic51_p2_helmet_marksman",
-			"ic51_p2_helmet_medic_t2",
-			"ic51_p2_helmet_medic_t3",
-			"ic51_p2_helmet_sabre1",
-			"ic51_p2_helmet_sabre2",
-			"ic51_p2_helmet_sabre3",
-			"ic51_p2_helmet_medic_sabre1",
-			"ic51_p2_helmet_medic_sabre2",
-			"ic51_p2_helmet_medic_sabre3",
-			"ic51_p2_helmet_havoc1",
-			"ic51_p2_helmet_havoc2"
-			"ic51_p2_helmet_medic_havoc1",
-			"ic51_p2_helmet_medic_havoc2",
-			"ic51_p2_helmet_pilot_combat",
-			"ic51_p2_helmet_pilot_logi",
-			"51st_airborne_helmet_base",
-			"ic51_airborne_helmet_trooper",
-			"ic51_airborne_helmet_medic",
-			"51st_arf_helmet_base",
-			"ic51_arf_helmet_trooper",
-			"ic51_arf_helmet_jungle",
-			"ic51_arf_helmet_desert",
-			"ic51_arf_helmet_winter",
-			"51st_pilot_helmet_base",
-			"ic51_pilot_helmet_base",
+			"51st_p2_helmet_balance",
+			"51st_p2_helmet_ronin",
+			"51st_p2_helmet_growler",
+			"51st_p2_helmet_mortem",
+			"51st_p2_helmet_thorsen",
+			"51st_p2_helmet_atticus",
+			"51st_p2_helmet_dawn",
+			"51st_p2_helmet_various",
+			"51st_p2_helmet_rodeo",
+			"51st_p2_helmet_kane",
+			"51st_p2_helmet_apostle",
+			"51st_p2_helmet_mrogg",
+			"51st_airborne_helmet_scizo",
+			"51st_airborne_helmet_floyd",
+			"51st_arf_helmet_matthew",
+			"51st_arf_helmet_sand"
 		};
 		units[]=
 		{
@@ -274,6 +258,84 @@ class cfgweapons
 		{
 			model = "51st_arf_helmets";
 			camo = "sand";
+		};
+	};
+};
+
+//Custom phase 2 helmets
+class xtdgearmodels
+{
+	class cfgweapons
+	{
+		class 51st_phase2_helmets_custom
+		{
+			label = "[51st] Phase 2 Helmets [Custom]";
+			author = "Jay Leno's Chin";
+			options[] = {"camo"};
+			class camo
+			{
+				changeingame = 0;
+				values[] = {"balance","ronin","growler","mortem","thorsen","atticus","dawn","various","rodeo","kane","apostle","mrogg"};
+				class balance
+				{
+					label = "Balance";
+				};
+				
+				class ronin
+				{
+					label = "Ronin";
+				};
+				
+				class growler
+				{
+					label = "Growler";
+				};
+				
+				class mortem
+				{
+					label = "Mortem";
+				};
+
+				class thorsen
+				{
+					label = "Thorsen";
+				};
+
+				class atticus
+				{
+					label = "Atticus";
+				};
+
+				class dawn
+				{
+					label = "Dawn";
+				};
+
+				class various
+				{
+					label = "Various";
+				};
+
+				class rodeo
+				{
+					label = "Rodeo";
+				};
+
+				class kane
+				{
+					label = "Kane";
+				};
+
+				class apostle
+				{
+					label = "Apostle";
+				};
+
+				class mrogg
+				{
+					label = "Mrogg";
+				};
+			};	
 		};
 	};
 };

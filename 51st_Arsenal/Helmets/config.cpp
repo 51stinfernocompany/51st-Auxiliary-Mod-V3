@@ -109,7 +109,7 @@ class cfgweapons
 		};
 	};
 	
-	class 51st_p2_helmet_ct: 51st_51st_p2_helmet_base
+	class 51st_p2_helmet_ct: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -122,7 +122,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_corporal: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_corporal: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -135,7 +135,7 @@ class cfgweapons
 		};
 	};
 
-	class ic51_p2_helmet_sergeant: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_sergeant: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -149,7 +149,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_command: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_command: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -162,7 +162,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_at: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_at: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -175,7 +175,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_heavy: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_heavy: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -188,7 +188,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_marksman: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_marksman: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -201,7 +201,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_t2: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_t2: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -214,7 +214,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_t3: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_t3: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -227,7 +227,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic: 51st_P2_Helmet_Base
+	class ic51_p2_helmet_medic: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -241,7 +241,7 @@ class cfgweapons
 		};
 	};
 
-	class ic51_p2_helmet_sabre1: 51st_P2_Helmet_Base
+	class ic51_p2_helmet_sabre1: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -254,7 +254,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_sabre2: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_sabre2: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -267,7 +267,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_sabre3: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_sabre3: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -280,7 +280,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_sabre1: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_sabre1: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -293,7 +293,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_sabre2: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_sabre2: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -306,7 +306,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_sabre3: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_sabre3: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -321,7 +321,7 @@ class cfgweapons
 	
 //Havoc Platoon
 	
-	class ic51_p2_helmet_havoc1: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_havoc1: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -334,7 +334,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_havoc2: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_havoc2: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -347,7 +347,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_havoc1: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_havoc1: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -360,7 +360,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_medic_havoc2: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_medic_havoc2: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -374,7 +374,7 @@ class cfgweapons
 	};
 //Chimera Squad
 	
-	class ic51_p2_helmet_pilot_logi: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_pilot_logi: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -387,7 +387,7 @@ class cfgweapons
 		};
 	};
 	
-	class ic51_p2_helmet_pilot_combat: 51st_51st_p2_helmet_base
+	class ic51_p2_helmet_pilot_combat: 51st_p2_helmet_base
 	{
 		scope = 2;
 		scopearsenal = 2;
@@ -774,7 +774,7 @@ class xtdgearmodels
 				
 				class phase_2_combat
 				{
-					label = "Ground Combat";
+					label = "Combat";
 				};
 				
 				class p2_pilot_helmet
@@ -792,7 +792,7 @@ class xtdgearmodels
 			class camo
 			{
 				changeingame = 0;
-				values[] = {"base","jungle","desert","winter"};
+				values[] = {"base","jungle","desert","winter","matthew","sand"};
 				class base
 				{
 					label = "base";
@@ -812,6 +812,16 @@ class xtdgearmodels
 				{
 					label = "Winter Camo";
 				};
+
+				class matthew
+				{
+					label = "Matthew";
+				};
+
+				class sand
+				{
+					label = "Sand";
+				};
 			};	
 		};
 		
@@ -823,7 +833,7 @@ class xtdgearmodels
 			class camo
 			{
 				changeingame = 0;
-				values[] = {"mynock","mynock_Medic"};
+				values[] = {"mynock","mynock_Medic","scizo","floyd"};
 				class mynock
 				{
 					label = "Mynock";
@@ -832,6 +842,16 @@ class xtdgearmodels
 				class mynock_Medic
 				{
 					label = "Mynock Medic";
+				};
+
+				class scizo
+				{
+					label = "Scizo";
+				};
+
+				class floyd
+				{
+					label = "Floyd";
 				};
 			};	
 		};
